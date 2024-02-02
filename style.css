@@ -2,3 +2,18 @@ body {
     color: black;
     text-align: center;  
   }
+
+.box{
+    background-color: blue;
+    margin: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: azure;
+    width: 400px;
+    height: 400px;
+
+
+}
+.bg-blue[
+    background
+]
