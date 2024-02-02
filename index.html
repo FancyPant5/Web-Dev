@@ -5,7 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+    
         <script src="https://cdn.tailwindcss.com"></script> 
+        <style>
+           
+        </style>
+
+        <!-- heres our header class-->
         
         <header class = "bg-amber-700">
             <section class= "max-w-screen-md mx-auto flex flex-col md:flex-row gap-6 justify-between items-center py-3">
@@ -13,7 +19,7 @@
                 <img src=" https://img.northwestu.edu/eagle/common/eagle.png" class="h-16"></img>
             </div>
             <nav class="flex flex-col md:flex-row gap-8 text-amber-200 uppercase text-sm">
-                <a href=" # " class=" hover:text-white"> Link 1 </a>
+                <a href=" # "class=" hover:text-white"> Link 1 </a>
                 <a href=" # "class=" hover:text-white"> Link 2 </a>
                 <a href=" # "class=" hover:text-white"> Link 3 </a>
                 <a href=" # "class=" hover:text-white"> Link 4 </a>
@@ -21,21 +27,41 @@
             </section> 
            
         </header>
-        <main class="h-96 bg-amber-50">
-            <section class="max-w-screen-md mx-auto min-h-full">
-                <article class="h-96 flex flex-row items-center">
+
+        <!-- End of Line -->
+        
+        <main class=" bg-amber-50">
+            <section class="max-w-screen-md mx-auto min-h-full flex-col-reverse md:flex flex-row justify-between">
+                <article class="h-96 flex flex-row flex-1 items-center p-8">
                     <div>
                 <h1 class="font-bold text-3xl text-amber-900">Here's our Tag!</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nesciunt laboriosam id totam rem quas quisquam dolor? Impedit, laboriosam vitae eum nisi aperiam enim excepturi commodi sapiente. Harum, ut deserunt!</p>
                 </div>
                     </article>
-                    <article>
-                        <img src="img/two-business-people-fighting-EF0BX4.jpg">
+                    <article class="flex-1 p-8 overflow-y-hidden bg-cover bg-center">
+                        
+                        <img src="img/stock-prices.jpg"
+                        class="h-72 rounded-md "
+                        alt=""/>
+                        <div class=" text-center text-white text-4xl p-8 w-full h-96 bg-amber-700 bg-opacity-60">
+                            Stonks
+
+                        </div>
+                    
+
                     </article>
-    
-                    </section>
+                    
+           </section>
             </section>
         </main>
+        <main class="grid grid-cols-1 md:grid-cols-4 p-8 gap-8">
+            <div class=" h-64 bg-amber-600 rounded-3xl"></div>
+            <div class=" h-64 bg-amber-600 rounded-3xl"></div>
+            <div class=" h-64 bg-amber-600 rounded-3xl"></div>
+            <div class=" h-64 bg-amber-600 rounded-3xl"></div>
+        </main>
+
     </body>
 </html>
 
+<!-- Tron Lives -->
