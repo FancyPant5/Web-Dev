@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <div class="text-6xl ">
+            Welcome to this mysterious page <span id="firstName"></span>
+
+        </div>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="script.js">
+           
+        </script>
+        <script>
+            console.log('thsnk you for viewing my code :)')
+            
+            const alert = function(x){
+                alert(x);
+            }
+           
+            const addsTen = function(x){
+                let total = ( x + 10);
+                document.getElementById('result').innerHTML = total;
+                
+            }
+            const changeColor = function(x){
+                let result = document.getElementById('result');
+                result.classList.remove('text-red-500');
+                result.classList.add('text-blue-500');
+                result.classList.add(x);
+                
+                
+
+
+            }
+            const enterName = function(){
+                let name = prompt('Please Enter Your Name');
+                let firstNameSpan = document.getElementById('firstName');
+                firstNameSpan.innerHTML = name;
+            }
+
+
+            const bouncer = function(x){
+                let result = prompt(' You really wanna open this page?');
+                if(result == "yes"){
+                    alert('Thanks bro');
+                }else{
+
+                    window.location.replace('https://www.youtube.com/watch?v=xvFZjo5PgG0')
+                }
+                
+            }
+            console.log(document.readyState)
+            bouncer();
+        </script>
+        <style>
+            .btn{
+                padding: 10px;
+                background-color: rgb(255, 191, 0);
+                color: #fff; 
+            }
+        </style>
+    </head>
+    <body>
+        
+
+        
+        <div>
+            <section class="max-w-screen-md mx-auto flex flex-col md:flex-row gap-6 justify-between items-center py-3">
+
+            <button class="btn flex flex-row md:flex-row gap-8 text-200 uppercase text-sm" onClick="alert('hi')">Sign in</button>
+            <button class="btn flex flex-row md:flex-row gap-8 text-200 uppercase text-sm" onClick="alert('Goodbye')">Learn More!</button>
+            <button class="btn" onclick="addsTen(100)">Add Ten</button>
+            <button class="btn" onclick="changeColor('text-blue-500')">change to blue</button>
+            <button class="btn" onclick="changeColor('text-red-500')">change to red</button>
+            <div id="result" class="text-5xl text-red-500"></div>
+            <button class="btn" onclick="enterName()">Enter your name</button>
+        </section>
+        </div>
+        <hr>
+         
+        
+       
+      
+    </body>
+</html>
