@@ -1,6 +1,6 @@
 <html>
     <head>
-        <div class="text-6xl ">
+        <div class="text-6xl items-center ">
             Welcome to this mysterious page <span id="firstName"></span>
 
         </div>
@@ -9,7 +9,7 @@
            
         </script>
         <script>
-            console.log('thsnk you for viewing my code :)')
+            console.log('thank you for viewing my code :)')
             
             const alert = function(x){
                 alert(x);
@@ -22,8 +22,8 @@
             }
             const changeColor = function(x){
                 let result = document.getElementById('result');
-                result.classList.remove('text-red-500');
-                result.classList.add('text-blue-500');
+                result.classList.remove('text-blue-500');
+                result.classList.add('text-red-500');
                 result.classList.add(x);
                 
                 
@@ -63,20 +63,21 @@
 
         
         <div>
-            <section class="max-w-screen-md mx-auto flex flex-col md:flex-row gap-6 justify-between items-center py-3">
+            <section class="max-w-screen-md mx-auto flex flex-col md:flex-row gap-6 justify-between items-center py-3 items-center">
 
-            <button class="btn flex flex-row md:flex-row gap-8 text-200 uppercase text-sm" onClick="alert('hi')">Sign in</button>
-            <button class="btn flex flex-row md:flex-row gap-8 text-200 uppercase text-sm" onClick="alert('Goodbye')">Learn More!</button>
-            <button class="btn" onclick="addsTen(100)">Add Ten</button>
-            <button class="btn" onclick="changeColor('text-blue-500')">change to blue</button>
-            <button class="btn" onclick="changeColor('text-red-500')">change to red</button>
-            <div id="result" class="text-5xl text-red-500"></div>
-            <button class="btn" onclick="enterName()">Enter your name</button>
+            
+            
+            <button class="btn hover:opacity-60" onclick="addsTen(0)">Add Ten</button>
+            <button class="btn hover:opacity-60" onclick="changeColor('text-blue-500')">change to blue</button>
+            <button class="btn hover:opacity-60" onclick="changeColor('text-red-500')">change to red</button>
+            
+            <button class="btn hover:opacity-60" onclick="enterName()">Sign in</button>
+            <button class="btn hover:opacity-60" onClick= window.location.replace('https://www.youtube.com/watch?v=xvFZjo5PgG0')>Learn More!</button>
         </section>
         </div>
         <hr>
          
-        
+        <div id="result" class="text-5xl text-red-500"></div>
        
       
     </body>
